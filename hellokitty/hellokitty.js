@@ -7,7 +7,7 @@ $(function() {
         },1000);
     });
 
-    $("body").on("click", {}, function () {
+    $("body").on("click touchstart", {}, function () {
         $(".left-arm").addClass("roll");
         $(".right-arm").addClass("roll1");
     });
