@@ -10,6 +10,10 @@ $(function() {
     $("body").on("click touchstart", {}, function () {
         $(".left-arm").addClass("roll");
         $(".right-arm").addClass("roll1");
+        setTimeout(function () {
+            $(".left-arm").removeClass("roll");
+            $(".right-arm").removeClass("roll1");
+        }, 3200);
     });
 
     $("body").on("mouseover", ".neck", {}, function() {
