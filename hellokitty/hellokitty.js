@@ -7,6 +7,11 @@ $(function() {
         },1000);
     });
 
+    $("body").on("click", {}, function () {
+        $(".left-arm").addClass("roll");
+        $(".right-arm").addClass("roll1");
+    });
+
     $("body").on("mouseover", ".neck", {}, function() {
         $(".left-arm").addClass("roll");
         $(".right-arm").addClass("roll1");
